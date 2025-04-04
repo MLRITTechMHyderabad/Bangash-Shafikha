@@ -1,4 +1,5 @@
-'''n=int(input("enter no of students"))
+#grades
+n=int(input("enter no of students"))
 students={}
 for i in range(n):
     name = input("Enter name")
@@ -16,7 +17,7 @@ print("Number of Students Passed:", passed_students)
 
                     
 
-
+#battle
 import random
 
 class Character:
@@ -114,10 +115,10 @@ battle(archer, warrior)
 
 
 
-    '''
 
 
 
+#employe
 
 employees = [
     {"name":"Tony", "Salary":50000.00, "rating":5},
@@ -176,17 +177,6 @@ for emp in update_employees:
 
 
 
-
-n = int(input("Enter number of employees: "))
-
-employees = [ {"name": input("Enter employee name: "), "salary": float(input("Enter salary: ")), "rating": int(input("Enter rating (1-5): "))} for _ in range(n) ]
-
-adjust_salary = lambda emp: { **emp, "salary": round( emp["salary"] * (1.1 if emp["rating"] >= 4 else 1.05 if emp["rating"] == 3 else 0.97), 2 ) }
-
-updated_employees = list(map(adjust_salary, employees))
-
-print("\nUpdated Employee Salaries:")
-for emp in updated_employees: print(emp)
 
 
 
